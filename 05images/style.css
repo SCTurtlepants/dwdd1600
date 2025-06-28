@@ -150,7 +150,7 @@ main a:hover {
 
 /* Image styling */
 figure.pose {
-    margin: 0 0 0 10px;
+    margin: 10px;
     width: 30%;
     float: right;
 } 
