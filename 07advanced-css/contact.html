@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ben Hansen">
+    <meta name="description" content="Explore the best hiking and travel destinations across Utah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/oiq1mhv.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Wander Utah - Contact Us</title>
+</head>
+
+<body>
+    <!-- start the page head -->
+    <header>
+        <img src="images/logo.png" alt="line art mountain logo" width="100" height="50">
+        <span>Wander Utah</span> - Contact Us
+    </header>
+    <!-- start page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Top Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- start the main content -->
+    <main>
+
+        <h1>Contact Us</h1>
+        <form method="get" class="myForm" action="thanks.html">
+        <fieldset> 
+            <legend> Customer Information  </legend>
+        <label> Your Name <input type="text" name="name" required placeholder="John Harvard"></label>
+        <label> Email Address (Optional) <input type="email" name="email" placeholder="jharvard@cs50.net"></label>
+        <label> Phone (Optional) <input type="tel" name="phone" placeholder="987-555-1234"></label>
+        </fieldset>  
+        
+        <fieldset>
+            <legend> Would you like a response? </legend>  
+            <label><input type="radio" name="method" value="yes" required>Yes</label>
+            <label><input type="radio" name="method" value="no" required>No</label>
+
+            <label>(If Yes) Preferred Contact Method
+            <select name="time">
+                <option value="none">Please Select</option>
+                <option value="email">Email</option>
+                <option value="call">Phone Call</option>
+                <option value="text">Text</option>
+                
+                </select>
+            </label>
+            
+
+        </fieldset>
+
+        <fieldset>
+            <legend> Reason for Contacting Us </legend>
+            <label><input type="checkbox" name="question" value="chosen"> I have a question about a specific destination</label>
+            <label><input type="checkbox" name="help" value="chosen"> I need help planning a trip</label>
+            <label><input type="checkbox" name="partner" value="chosen"> I'd like to partner with Wander Utah</label>
+            <label><input type="checkbox" name="feedback" value="chosen"> I have feedback about your articles</label>
+            <label><input type="checkbox" name="other" value="chosen"> Other (please explain below)</label>
+            <label>Reason <textarea name="reason"></textarea></label>
+  
+
+        </fieldset>
+
+        <label>Message
+            <textarea name="field" required></textarea>
+
+        </label>
+
+
+        <input type="submit" value="Send Message">
+        </form>
+        
+    </main>
+
+
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2025 &bull; Ben Hansen &bull; Web Essentials</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+/* Prevent problems on older browsers */
+* {box-sizing: border-box;}
+
+body {
+  font-family: "Clarendon", serif;
+}
+
+/*Header stuff here*/
+header {
+  background-color: #086624;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+header span {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* small screen navigation */
+@media only screen and (max-width: 800px) {
+header {
+    border-bottom: solid 2px #000;
+}    
+    nav {
+        padding: 0 0;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        background-color: #CD8E29;
+        padding: .8rem;
+        border-bottom: solid 2px #000;
+        border-right: solid 2px #000;
+        border-left: solid 2px #000;
+        text-decoration: none;
+        color: #000;        
+        text-align: center;
+        font-weight: 400;
+    }
+    nav .active a {
+        background-color: #086624;
+        color: #CD8E29;
+        background-image: linear-gradient(to bottom, #164B3B, #086624);
+    }
+}
+
+/* end small screen navigation */
+
+
+/* large screen navigation here*/
+@media only screen and (min-width: 801px) {
+nav {
+    background-color: #CD8E29;
+    border-color: #000;
+    border-width: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+}
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0 10px;
+    display: flex;
+}
+
+
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 400;
+    }
+
+    nav li.active a {
+        background-image: linear-gradient(to bottom, #164B3B, #086624);
+        color: #F2b705;
+
+    }
+
+nav li a:hover {
+    color: #000;
+}
+}
+/* Main here */
+
+main {
+    padding: 1rem 10px;
+    background-color: #eaeaea;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main h1 {
+    color: #164B3B;
+}
+
+main h2 {
+    color: #164B3B;
+    margin-bottom: .2rem;
+}
+
+main p {
+    text-indent: 2em;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: .5rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+main dl {
+    clear:both;
+    padding: .5rem 30px;
+    border-radius: 15px;
+    padding: 1rem;
+    padding-top: .2rem;
+    background-color: #CD8E29;
+    border-radius: 10px;
+    border: 2px solid #000;
+    }
+
+main dl dt {
+    color: #780116;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #000;
+    font-size: .9rem;
+    margin-left: 20px;
+
+}
+
+main ul {
+    list-style-type: square;
+    padding-left: 80px;
+}
+
+main ol {
+    line-height: 2;
+    padding-left: 80px;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+}
+
+main address {
+    font-style: normal;
+    background-color: #CD8e29;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid #000;
+    width: 230px;
+
+}
+
+main a {
+    color: #086624;
+    
+}
+
+main a:hover {
+    color: #7FD4F6;
+}
+/* hero image styling */
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+/* Image styling */
+figure.pose {
+    margin: 10px;
+    width: 30%;
+    float: right;
+} 
+figure.pose img {
+    width: 100%;
+    height: auto;
+}
+figure.pose  figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+
+
+
+/* Image styling for gallery */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .75rem;
+    color: #376259;
+}
+
+div.gallery img {
+    width: 98%;
+    height: auto;
+    border-radius: 5px;
+}
+
+div.gallery img:hover {
+      box-shadow: 0px 0px 20px rgba(3, 3, 3, 0.9);
+}
+
+/* Form styling */
+
+.myForm fieldset {
+    border: 1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #888;
+    padding: .1rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea[name=field] {
+    height: 8rem;
+    width: 50%;
+}
+
+
+.myForm :required {
+    background-color: rgba(156,51,53,0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #376259;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+
+
+
+/* Footer here */
+footer {
+    clear:both;
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #333;
+}
+
+footer p{
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+/* max width */
+header, nav, main, footer {
+    max-width: 1290px;
+    margin: 0 auto;
+}
